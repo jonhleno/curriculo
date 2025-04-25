@@ -1,0 +1,70 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: aqua;
+    flex-wrap: wrap;
+    /* align-items: baseline;  center, flex-end, flex-start, stretch, baseline */
+    /* height: 800px; */
+}
+
+header {
+    text-align: center;
+    background-color: teal;
+    font-size: 20px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+aside {
+    border: 1px solid;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+    background-color: white;
+}
+
+#menu > ul {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+main {
+    border: 1px solid;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+    background-color: white;
+}
+
+#menu {
+    flex:0.2; 
+}
+
+#content {
+    flex: 0.8;
+}
+
+footer {
+    text-align: center;
+    text-align: center;
+    background-color: teal;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+/*Permite estilizar de acordo o tamanho da tela*/
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    div {
+        font-weight: bold;
+    }
+}
